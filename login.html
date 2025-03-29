@@ -238,13 +238,22 @@
     <nav class="container mx-auto px-6 py-4 border-b border-primary">
         <div class="flex items-center justify-between">
             <a href="index.html" class="text-2xl font-bold primary glitch-text" data-text="SecureAI Chat">SecureAI Chat</a>
-            <a href="index.html" class="cyber-button">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Back
-            </a>
+            <div class="flex space-x-4">
+                <a href="contact.html" class="cyber-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Contact
+                </a>
+                <a href="index.html" class="cyber-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Back
+                </a>
+            </div>
         </div>
     </nav>
 
@@ -353,7 +362,7 @@
             passwordError.classList.add('hidden');
             
             let isValid = true;
-            
+
             // Validate username
             if (!username) {
                 usernameError.classList.remove('hidden');
@@ -365,7 +374,7 @@
                 passwordError.classList.remove('hidden');
                 isValid = false;
             }
-            
+
             // If form is valid, redirect to Botpress
             if (isValid) {
                 window.location.href = 'https://cdn.botpress.cloud/webchat/v2.2/shareable.html?configUrl=https://files.bpcontent.cloud/2025/03/28/13/20250328133358-45D0XSY5.json';
